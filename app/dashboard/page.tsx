@@ -1,6 +1,4 @@
-import Image from 'next/image'
-
-export default function Home() {
+export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6 md:p-12">
       <section className="flex h-[22rem] shrink-0 rounded-lg bg-blue-500 p-4 mb-6">

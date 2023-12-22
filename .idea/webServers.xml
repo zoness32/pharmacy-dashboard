@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6779143a-2bc9-4e45-827b-070fc77766cd" name="truenas">
+        <fileTransfer rootFolder="/mnt/zfs_pool12g/personal/taylor/git/pharmacy-dashboard" accessType="SFTP" host="10.10.100.243" port="22" sshConfigId="497839e6-e90c-4817-9879-5b99a5f37766" sshConfig="taylor@10.10.100.243:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
