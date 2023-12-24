@@ -1,7 +1,6 @@
 const { db } = require('@vercel/postgres');
 const {
   patients,
-  biologicalData,
   visits
 } = require('../app/lib/mockData.js');
 
@@ -44,44 +43,6 @@ async function seedPatients(client) {
   }
 }
 
-async function seedBiologicalData(client) {
-  try {
-    await client.sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
-
-    const createTable = await client.sql`
-      CREATE TABLE IF NOT EXISTS biological_data (
-        id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
-        visit_id UUID NOT NULL,
-        heart_rate_BPM INTEGER NOT NULL,
-        blood_pressure TEXT NOT NULL,
-        pain_level INTEGER NOT NULL
-      );
-    `;
-
-    console.log('Created "biological_data" table');
-
-    const insertedBiologicalData = await Promise.all(
-      biologicalData.map(
-        (bioData) => client.sql`
-          INSERT INTO biological_data (id, visit_id, heart_rate_BPM, blood_pressure, pain_level)
-          VALUES (${bioData.id}, ${bioData.visit_id}, ${bioData.heart_rate_BPM}, ${bioData.blood_pressure}, ${bioData.pain_level})
-          ON CONFLICT (id) DO NOTHING;
-        `,
-      ),
-    );
-
-    console.log(`Seeded ${biologicalData.length} biological data`);
-
-    return {
-      createTable,
-      biologicalData: insertedBiologicalData
-    };
-  } catch (error) {
-    console.error('Error seeding biological_data:', error);
-    throw error;
-  }
-}
-
 async function seedVisits(client) {
   try {
     await client.sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
@@ -97,7 +58,8 @@ async function seedVisits(client) {
           administering_nurse TEXT NOT NULL,
           medication TEXT NOT NULL,
           visit_duration_seconds INTEGER NOT NULL,
-          biological_data_id UUID NOT NULL,
+          heart_rate_BPM INTEGER NOT NULL,
+          blood_pressure
           medication_tolerance TEXT NOT NULL
       );
     `;
