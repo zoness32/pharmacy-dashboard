@@ -1,6 +1,4 @@
-export default async function PatientDetails({
-    patient
-}) {
+export default async function PatientDetails() {
     return (
         <div>
             Patient Details Here

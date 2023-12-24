@@ -1,0 +1,46 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Patient {
+  id         String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  first_name String   @db.VarChar(255)
+  last_name  String   @db.VarChar(255)
+  email      String   @unique
+  birthdate  DateTime @db.Date
+  address    String
+  sex        String
+  blood_type String
+  city       String
+  state      String
+  zipcode    String
+  visits     Visit[]
+
+  @@map("patients")
+}
+
+model Visit {
+  id                      String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  visit_time              DateTime @db.Date
+  administration_location String
+  location_address        String
+  location_city           String
+  location_state          String
+  location_zipcode        String
+  administering_nurse     String
+  medication              String
+  visit_duration_seconds  Int
+  medication_tolerance    String
+  patient                 Patient? @relation(fields: [patient_id], references: [id])
+  patient_id              String?  @db.Uuid
+  blood_pressure          String
+  heartrate_bpm           Int
+  pain_level              Int
+
+  @@map("visits")
+}

@@ -1,6 +1,4 @@
-export default async function VisitTable({
-    visits
-}) {
+export default async function VisitTable() {
     return (
         <div>
             Your Table Here
