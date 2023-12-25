@@ -8,3 +8,12 @@ export async function fetchPatients() {
         throw new Error('Failed to fetch the latest invoices.');
     }
 }
+
+export async function fetchFirstPatient() {
+    try {
+        return await prisma.patient.findFirst({});
+    } catch (error) {
+        console.error('Database Error:', error);
+        throw new Error('Failed to fetch the latest invoices.');
+    }
+}

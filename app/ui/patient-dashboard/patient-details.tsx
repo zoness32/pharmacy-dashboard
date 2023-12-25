@@ -1,18 +1,13 @@
 import {Patient} from "@prisma/client";
 
 interface PatientDetailsProps {
-    patients: Array<Patient>
+    patient: Patient
 }
 
-export default function PatientDetails({patients}: PatientDetailsProps) {
+export default function PatientDetails({patient}: PatientDetailsProps) {
     return (
         <div>
-            {
-                patients.map(patient => {
-                        return <span>{patient.first_name}</span>;
-                    }
-                )
-            }
+            <span>{patient.first_name} {patient.last_name}</span>
         </div>
     )
 }
