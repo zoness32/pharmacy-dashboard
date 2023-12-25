@@ -1,7 +1,5 @@
-const { PrismaClient } = require('@prisma/client');
 const { patients, visits } = require('../app/lib/mockData');
-
-const prisma = new PrismaClient();
+const { prismaClient } = require('../app/lib/db');
 
 async function main() {
     let start = 0;
@@ -12,7 +10,7 @@ async function main() {
         start += 7;
         end += 7;
 
-        await prisma.patient.create({
+        await prismaClient.patient.create({
             data: {
                 first_name: patient.first_name,
                 last_name: patient.last_name,
@@ -38,5 +36,5 @@ main()
         process.exit(1);
     })
     .finally(async () => {
-        await prisma.$disconnect();
+        await prismaClient.$disconnect();
     });

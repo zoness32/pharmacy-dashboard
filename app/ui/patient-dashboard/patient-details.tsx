@@ -1,7 +1,18 @@
-export default async function PatientDetails() {
+import {Patient} from "@prisma/client";
+
+interface PatientDetailsProps {
+    patients: Array<Patient>
+}
+
+export default function PatientDetails({patients}: PatientDetailsProps) {
     return (
         <div>
-            Patient Details Here
+            {
+                patients.map(patient => {
+                        return <span>{patient.first_name}</span>;
+                    }
+                )
+            }
         </div>
     )
 }
