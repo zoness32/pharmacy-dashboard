@@ -14,6 +14,19 @@ export async function fetchFirstPatient() {
         return await prisma.patient.findFirst({});
     } catch (error) {
         console.error('Database Error:', error);
-        throw new Error('Failed to fetch the latest invoices.');
+        throw new Error('Failed to fetch the latest patient info.');
+    }
+}
+
+export async function fetchPatientAndVisits() {
+    try {
+        return await prisma.patient.findFirst({
+            include: {
+                visits: true
+            }
+        });
+    } catch (error) {
+        console.error('Database Error:', error);
+        throw new Error('Failed to fetch the latest visits for patient');
     }
 }
