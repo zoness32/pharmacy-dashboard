@@ -34,6 +34,11 @@ model Visit {
   location_zipcode        String
   administering_nurse     String
   medication              String
+  // It makes more sense to store the time the visit began and the time the visit
+  // ended, then compute the difference in the app; that's how a human would need to calculate
+  // this value to enter it in anyway, so we might as well make the app do it.
+  // It's much easier to generate mock data for this value, though, so I'm doing it this way
+  // in the demo.
   visit_duration_seconds  Int
   medication_tolerance    String
   patient                 Patient? @relation(fields: [patient_id], references: [id])
