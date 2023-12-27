@@ -142,7 +142,7 @@ const visits = [{
     "administering_nurse": "Buddy Chue",
     "medication": "HeadacheEaser",
     "visit_duration_seconds": 1790,
-    "medication_tolerance": "neutral",
+    "medication_tolerance": 3,
     "blood_pressure": "118/76",
     "heartrate_bpm": 66,
     "pain_level": 1
@@ -156,7 +156,7 @@ const visits = [{
     "administering_nurse": "Teresa Sewill",
     "medication": "CholesterBlock",
     "visit_duration_seconds": 1278,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "126/76",
     "heartrate_bpm": 60,
     "pain_level": 5
@@ -170,7 +170,7 @@ const visits = [{
     "administering_nurse": "Rebekkah Pedel",
     "medication": "PainReliefol",
     "visit_duration_seconds": 12410,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "128/70",
     "heartrate_bpm": 69,
     "pain_level": 3
@@ -184,7 +184,7 @@ const visits = [{
     "administering_nurse": "Quinn MacMorland",
     "medication": "ProbiotaMax",
     "visit_duration_seconds": 1507,
-    "medication_tolerance": "great",
+    "medication_tolerance": 5,
     "blood_pressure": "140/90",
     "heartrate_bpm": 79,
     "pain_level": 1
@@ -198,7 +198,7 @@ const visits = [{
     "administering_nurse": "Liliane Marrow",
     "medication": "SleepEZapam",
     "visit_duration_seconds": 14777,
-    "medication_tolerance": "bad",
+    "medication_tolerance": 2,
     "blood_pressure": "142/88",
     "heartrate_bpm": 64,
     "pain_level": 7
@@ -212,7 +212,7 @@ const visits = [{
     "administering_nurse": "Queenie Lantoph",
     "medication": "ArthriFlex",
     "visit_duration_seconds": 14129,
-    "medication_tolerance": "bad",
+    "medication_tolerance": 2,
     "blood_pressure": "132/88",
     "heartrate_bpm": 134,
     "pain_level": 3
@@ -226,7 +226,7 @@ const visits = [{
     "administering_nurse": "Jackquelin Dale",
     "medication": "BloodPressureX",
     "visit_duration_seconds": 10760,
-    "medication_tolerance": "neutral",
+    "medication_tolerance": 3,
     "blood_pressure": "118/84",
     "heartrate_bpm": 131,
     "pain_level": 4
@@ -240,7 +240,7 @@ const visits = [{
     "administering_nurse": "Moselle Kitchinghan",
     "medication": "CholesterBlock",
     "visit_duration_seconds": 14523,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "112/76",
     "heartrate_bpm": 79,
     "pain_level": 1
@@ -254,7 +254,7 @@ const visits = [{
     "administering_nurse": "Kristofer Burbank",
     "medication": "PainReliefol",
     "visit_duration_seconds": 5077,
-    "medication_tolerance": "neutral",
+    "medication_tolerance": 3,
     "blood_pressure": "115/72",
     "heartrate_bpm": 121,
     "pain_level": 1
@@ -268,7 +268,7 @@ const visits = [{
     "administering_nurse": "Cosmo Woollam",
     "medication": "SinusSoothe",
     "visit_duration_seconds": 2613,
-    "medication_tolerance": "bad",
+    "medication_tolerance": 2,
     "blood_pressure": "125/85",
     "heartrate_bpm": 75,
     "pain_level": 8
@@ -282,7 +282,7 @@ const visits = [{
     "administering_nurse": "Elke Basile",
     "medication": "MuscleMender",
     "visit_duration_seconds": 11107,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "118/76",
     "heartrate_bpm": 73,
     "pain_level": 1
@@ -296,7 +296,7 @@ const visits = [{
     "administering_nurse": "Edgardo Tidmas",
     "medication": "SinusSoothe",
     "visit_duration_seconds": 12765,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "118/84",
     "heartrate_bpm": 131,
     "pain_level": 1
@@ -310,7 +310,7 @@ const visits = [{
     "administering_nurse": "Ivar Look",
     "medication": "CoughCalmix",
     "visit_duration_seconds": 3427,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "132/78",
     "heartrate_bpm": 69,
     "pain_level": 2
@@ -324,7 +324,7 @@ const visits = [{
     "administering_nurse": "Egbert Gately",
     "medication": "PainReliefol",
     "visit_duration_seconds": 5057,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "130/79",
     "heartrate_bpm": 88,
     "pain_level": 10
@@ -338,7 +338,7 @@ const visits = [{
     "administering_nurse": "Moll Hebblewaite",
     "medication": "VisionClarity",
     "visit_duration_seconds": 2354,
-    "medication_tolerance": "bad",
+    "medication_tolerance": 2,
     "blood_pressure": "134/82",
     "heartrate_bpm": 103,
     "pain_level": 8
@@ -352,7 +352,7 @@ const visits = [{
     "administering_nurse": "Benita Le Gall",
     "medication": "ArthriFlex",
     "visit_duration_seconds": 11790,
-    "medication_tolerance": "bad",
+    "medication_tolerance": 2,
     "blood_pressure": "128/70",
     "heartrate_bpm": 110,
     "pain_level": 6
@@ -366,7 +366,7 @@ const visits = [{
     "administering_nurse": "George Osinin",
     "medication": "SinusSoothe",
     "visit_duration_seconds": 11903,
-    "medication_tolerance": "bad",
+    "medication_tolerance": 2,
     "blood_pressure": "120/86",
     "heartrate_bpm": 138,
     "pain_level": 7
@@ -380,7 +380,7 @@ const visits = [{
     "administering_nurse": "Shir Cerro",
     "medication": "ProbiotaMax",
     "visit_duration_seconds": 7439,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "128/74",
     "heartrate_bpm": 132,
     "pain_level": 7
@@ -394,7 +394,7 @@ const visits = [{
     "administering_nurse": "Susana Newton",
     "medication": "AsthmaEase",
     "visit_duration_seconds": 1337,
-    "medication_tolerance": "bad",
+    "medication_tolerance": 2,
     "blood_pressure": "134/80",
     "heartrate_bpm": 110,
     "pain_level": 8
@@ -408,7 +408,7 @@ const visits = [{
     "administering_nurse": "Ermin Zollner",
     "medication": "VisionClarity",
     "visit_duration_seconds": 8576,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "115/74",
     "heartrate_bpm": 117,
     "pain_level": 9
@@ -422,7 +422,7 @@ const visits = [{
     "administering_nurse": "Irma Allcock",
     "medication": "ProbiotaMax",
     "visit_duration_seconds": 7556,
-    "medication_tolerance": "bad",
+    "medication_tolerance": 2,
     "blood_pressure": "140/84",
     "heartrate_bpm": 118,
     "pain_level": 10
@@ -436,7 +436,7 @@ const visits = [{
     "administering_nurse": "Goraud Brushneen",
     "medication": "MoodStabilix",
     "visit_duration_seconds": 4735,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "136/72",
     "heartrate_bpm": 64,
     "pain_level": 9
@@ -450,7 +450,7 @@ const visits = [{
     "administering_nurse": "Sloane Sirmon",
     "medication": "BloodPressureX",
     "visit_duration_seconds": 11976,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "144/92",
     "heartrate_bpm": 77,
     "pain_level": 2
@@ -464,7 +464,7 @@ const visits = [{
     "administering_nurse": "Suzy McChruiter",
     "medication": "CholesterBlock",
     "visit_duration_seconds": 13254,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "134/84",
     "heartrate_bpm": 69,
     "pain_level": 6
@@ -478,7 +478,7 @@ const visits = [{
     "administering_nurse": "Marchall Alejandre",
     "medication": "MuscleMender",
     "visit_duration_seconds": 1725,
-    "medication_tolerance": "great",
+    "medication_tolerance": 5,
     "blood_pressure": "134/90",
     "heartrate_bpm": 108,
     "pain_level": 7
@@ -492,7 +492,7 @@ const visits = [{
     "administering_nurse": "Brynne Pedrol",
     "medication": "MuscleMender",
     "visit_duration_seconds": 6564,
-    "medication_tolerance": "great",
+    "medication_tolerance": 5,
     "blood_pressure": "136/80",
     "heartrate_bpm": 92,
     "pain_level": 10
@@ -506,7 +506,7 @@ const visits = [{
     "administering_nurse": "Perren Bodle",
     "medication": "ProbiotaMax",
     "visit_duration_seconds": 8606,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "134/80",
     "heartrate_bpm": 89,
     "pain_level": 4
@@ -520,7 +520,7 @@ const visits = [{
     "administering_nurse": "Angeli Jouhandeau",
     "medication": "DiabetiCare",
     "visit_duration_seconds": 10026,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "125/72",
     "heartrate_bpm": 80,
     "pain_level": 1
@@ -534,7 +534,7 @@ const visits = [{
     "administering_nurse": "Dodie Larwood",
     "medication": "ProbiotaMax",
     "visit_duration_seconds": 2596,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "112/78",
     "heartrate_bpm": 135,
     "pain_level": 10
@@ -548,7 +548,7 @@ const visits = [{
     "administering_nurse": "Roseanna Flye",
     "medication": "HeartGuardia",
     "visit_duration_seconds": 1619,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "115/72",
     "heartrate_bpm": 111,
     "pain_level": 1
@@ -562,7 +562,7 @@ const visits = [{
     "administering_nurse": "Jim Barber",
     "medication": "Medifloxin",
     "visit_duration_seconds": 11710,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "120/75",
     "heartrate_bpm": 67,
     "pain_level": 1
@@ -576,7 +576,7 @@ const visits = [{
     "administering_nurse": "Meara McLenahan",
     "medication": "DigestiPro",
     "visit_duration_seconds": 2452,
-    "medication_tolerance": "great",
+    "medication_tolerance": 5,
     "blood_pressure": "140/80",
     "heartrate_bpm": 94,
     "pain_level": 3
@@ -590,7 +590,7 @@ const visits = [{
     "administering_nurse": "Merrilee Melledy",
     "medication": "SkinSaverol",
     "visit_duration_seconds": 10345,
-    "medication_tolerance": "great",
+    "medication_tolerance": 5,
     "blood_pressure": "124/70",
     "heartrate_bpm": 122,
     "pain_level": 10
@@ -604,7 +604,7 @@ const visits = [{
     "administering_nurse": "Mira Dupree",
     "medication": "SkinSaverol",
     "visit_duration_seconds": 10779,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "136/78",
     "heartrate_bpm": 107,
     "pain_level": 7
@@ -618,7 +618,7 @@ const visits = [{
     "administering_nurse": "Elsi Fakes",
     "medication": "HeadacheEaser",
     "visit_duration_seconds": 1570,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "119/78",
     "heartrate_bpm": 129,
     "pain_level": 2
@@ -632,7 +632,7 @@ const visits = [{
     "administering_nurse": "Ludovika Lightfoot",
     "medication": "HeartGuardia",
     "visit_duration_seconds": 7261,
-    "medication_tolerance": "neutral",
+    "medication_tolerance": 3,
     "blood_pressure": "125/80",
     "heartrate_bpm": 108,
     "pain_level": 5
@@ -646,7 +646,7 @@ const visits = [{
     "administering_nurse": "Meaghan Walklot",
     "medication": "HeadacheEaser",
     "visit_duration_seconds": 1605,
-    "medication_tolerance": "bad",
+    "medication_tolerance": 2,
     "blood_pressure": "118/80",
     "heartrate_bpm": 81,
     "pain_level": 3
@@ -660,7 +660,7 @@ const visits = [{
     "administering_nurse": "Lettie Pie",
     "medication": "MuscleMender",
     "visit_duration_seconds": 9607,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "134/86",
     "heartrate_bpm": 86,
     "pain_level": 10
@@ -674,7 +674,7 @@ const visits = [{
     "administering_nurse": "Giulia Block",
     "medication": "ImmunoBoost",
     "visit_duration_seconds": 6628,
-    "medication_tolerance": "bad",
+    "medication_tolerance": 2,
     "blood_pressure": "128/88",
     "heartrate_bpm": 112,
     "pain_level": 10
@@ -688,7 +688,7 @@ const visits = [{
     "administering_nurse": "Salaidh Aldhous",
     "medication": "SleepEZapam",
     "visit_duration_seconds": 7659,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "130/79",
     "heartrate_bpm": 76,
     "pain_level": 6
@@ -702,7 +702,7 @@ const visits = [{
     "administering_nurse": "Cecilla Kemer",
     "medication": "PainReliefol",
     "visit_duration_seconds": 13295,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "126/78",
     "heartrate_bpm": 105,
     "pain_level": 8
@@ -716,7 +716,7 @@ const visits = [{
     "administering_nurse": "Thia Inman",
     "medication": "CholesterBlock",
     "visit_duration_seconds": 1030,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "125/78",
     "heartrate_bpm": 89,
     "pain_level": 1
@@ -730,7 +730,7 @@ const visits = [{
     "administering_nurse": "Matteo Radband",
     "medication": "HeadacheEaser",
     "visit_duration_seconds": 12227,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "138/78",
     "heartrate_bpm": 137,
     "pain_level": 4
@@ -744,7 +744,7 @@ const visits = [{
     "administering_nurse": "Ericka Spears",
     "medication": "CoughCalmix",
     "visit_duration_seconds": 2393,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "144/90",
     "heartrate_bpm": 61,
     "pain_level": 1
@@ -758,7 +758,7 @@ const visits = [{
     "administering_nurse": "Steve Ryce",
     "medication": "SinusSoothe",
     "visit_duration_seconds": 11807,
-    "medication_tolerance": "neutral",
+    "medication_tolerance": 3,
     "blood_pressure": "138/92",
     "heartrate_bpm": 81,
     "pain_level": 2
@@ -772,7 +772,7 @@ const visits = [{
     "administering_nurse": "Parnell Giffaut",
     "medication": "ArthriFlex",
     "visit_duration_seconds": 3776,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "118/72",
     "heartrate_bpm": 134,
     "pain_level": 8
@@ -786,7 +786,7 @@ const visits = [{
     "administering_nurse": "Gabriella Rannald",
     "medication": "PainReliefol",
     "visit_duration_seconds": 6083,
-    "medication_tolerance": "great",
+    "medication_tolerance": 5,
     "blood_pressure": "120/78",
     "heartrate_bpm": 69,
     "pain_level": 7
@@ -800,7 +800,7 @@ const visits = [{
     "administering_nurse": "Maudie Smeed",
     "medication": "SkinSaverol",
     "visit_duration_seconds": 9257,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "138/85",
     "heartrate_bpm": 136,
     "pain_level": 7
@@ -814,7 +814,7 @@ const visits = [{
     "administering_nurse": "Alessandro Sandwith",
     "medication": "MuscleMender",
     "visit_duration_seconds": 7874,
-    "medication_tolerance": "great",
+    "medication_tolerance": 5,
     "blood_pressure": "115/76",
     "heartrate_bpm": 105,
     "pain_level": 9
@@ -828,7 +828,7 @@ const visits = [{
     "administering_nurse": "Waverly Piscopo",
     "medication": "ProbiotaMax",
     "visit_duration_seconds": 1362,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "126/76",
     "heartrate_bpm": 112,
     "pain_level": 10
@@ -842,7 +842,7 @@ const visits = [{
     "administering_nurse": "Terry Roskrug",
     "medication": "SkinSaverol",
     "visit_duration_seconds": 3566,
-    "medication_tolerance": "neutral",
+    "medication_tolerance": 3,
     "blood_pressure": "144/92",
     "heartrate_bpm": 107,
     "pain_level": 1
@@ -856,7 +856,7 @@ const visits = [{
     "administering_nurse": "Darnell Davidsson",
     "medication": "CoughCalmix",
     "visit_duration_seconds": 10959,
-    "medication_tolerance": "neutral",
+    "medication_tolerance": 3,
     "blood_pressure": "128/78",
     "heartrate_bpm": 68,
     "pain_level": 3
@@ -870,7 +870,7 @@ const visits = [{
     "administering_nurse": "Pierette Moughtin",
     "medication": "AsthmaEase",
     "visit_duration_seconds": 8509,
-    "medication_tolerance": "great",
+    "medication_tolerance": 5,
     "blood_pressure": "128/78",
     "heartrate_bpm": 120,
     "pain_level": 8
@@ -884,7 +884,7 @@ const visits = [{
     "administering_nurse": "Allan Steanson",
     "medication": "HeartGuardia",
     "visit_duration_seconds": 13501,
-    "medication_tolerance": "neutral",
+    "medication_tolerance": 3,
     "blood_pressure": "130/82",
     "heartrate_bpm": 114,
     "pain_level": 9
@@ -898,7 +898,7 @@ const visits = [{
     "administering_nurse": "Barry McCutheon",
     "medication": "Medifloxin",
     "visit_duration_seconds": 8403,
-    "medication_tolerance": "bad",
+    "medication_tolerance": 2,
     "blood_pressure": "140/80",
     "heartrate_bpm": 114,
     "pain_level": 3
@@ -912,7 +912,7 @@ const visits = [{
     "administering_nurse": "Tomlin Cossins",
     "medication": "MoodStabilix",
     "visit_duration_seconds": 12075,
-    "medication_tolerance": "great",
+    "medication_tolerance": 5,
     "blood_pressure": "144/92",
     "heartrate_bpm": 137,
     "pain_level": 8
@@ -926,7 +926,7 @@ const visits = [{
     "administering_nurse": "Arvy Cana",
     "medication": "ArthriFlex",
     "visit_duration_seconds": 3588,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "138/70",
     "heartrate_bpm": 91,
     "pain_level": 3
@@ -940,7 +940,7 @@ const visits = [{
     "administering_nurse": "Benni Gratton",
     "medication": "VisionClarity",
     "visit_duration_seconds": 1549,
-    "medication_tolerance": "bad",
+    "medication_tolerance": 2,
     "blood_pressure": "122/78",
     "heartrate_bpm": 97,
     "pain_level": 6
@@ -954,7 +954,7 @@ const visits = [{
     "administering_nurse": "Rocky Cubin",
     "medication": "DigestiPro",
     "visit_duration_seconds": 13362,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "124/76",
     "heartrate_bpm": 119,
     "pain_level": 10
@@ -968,7 +968,7 @@ const visits = [{
     "administering_nurse": "Delaney McCrorie",
     "medication": "PainReliefol",
     "visit_duration_seconds": 9913,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "130/70",
     "heartrate_bpm": 105,
     "pain_level": 4
@@ -982,7 +982,7 @@ const visits = [{
     "administering_nurse": "Garrik Kettridge",
     "medication": "Medifloxin",
     "visit_duration_seconds": 9929,
-    "medication_tolerance": "neutral",
+    "medication_tolerance": 3,
     "blood_pressure": "112/76",
     "heartrate_bpm": 80,
     "pain_level": 5
@@ -996,7 +996,7 @@ const visits = [{
     "administering_nurse": "Virgie Lyffe",
     "medication": "SleepEZapam",
     "visit_duration_seconds": 4305,
-    "medication_tolerance": "bad",
+    "medication_tolerance": 2,
     "blood_pressure": "142/82",
     "heartrate_bpm": 98,
     "pain_level": 1
@@ -1010,7 +1010,7 @@ const visits = [{
     "administering_nurse": "Jannelle Purchon",
     "medication": "AllergiClear",
     "visit_duration_seconds": 7611,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "140/88",
     "heartrate_bpm": 75,
     "pain_level": 6
@@ -1024,7 +1024,7 @@ const visits = [{
     "administering_nurse": "Catina Pendrigh",
     "medication": "MoodStabilix",
     "visit_duration_seconds": 13232,
-    "medication_tolerance": "great",
+    "medication_tolerance": 5,
     "blood_pressure": "119/78",
     "heartrate_bpm": 87,
     "pain_level": 7
@@ -1038,7 +1038,7 @@ const visits = [{
     "administering_nurse": "Mabelle Langham",
     "medication": "HeartGuardia",
     "visit_duration_seconds": 3609,
-    "medication_tolerance": "bad",
+    "medication_tolerance": 2,
     "blood_pressure": "132/78",
     "heartrate_bpm": 95,
     "pain_level": 1
@@ -1052,7 +1052,7 @@ const visits = [{
     "administering_nurse": "Harp Miguet",
     "medication": "BloodPressureX",
     "visit_duration_seconds": 3892,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "115/76",
     "heartrate_bpm": 115,
     "pain_level": 9
@@ -1066,7 +1066,7 @@ const visits = [{
     "administering_nurse": "Nathanil Berdale",
     "medication": "VisionClarity",
     "visit_duration_seconds": 11860,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "126/78",
     "heartrate_bpm": 73,
     "pain_level": 8
@@ -1080,7 +1080,7 @@ const visits = [{
     "administering_nurse": "Em Hrycek",
     "medication": "AllergiClear",
     "visit_duration_seconds": 5297,
-    "medication_tolerance": "neutral",
+    "medication_tolerance": 3,
     "blood_pressure": "126/72",
     "heartrate_bpm": 138,
     "pain_level": 8
@@ -1094,7 +1094,7 @@ const visits = [{
     "administering_nurse": "Denys Lea",
     "medication": "CoughCalmix",
     "visit_duration_seconds": 8103,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "128/76",
     "heartrate_bpm": 70,
     "pain_level": 2
@@ -1108,7 +1108,7 @@ const visits = [{
     "administering_nurse": "Eric Gatherell",
     "medication": "CoughCalmix",
     "visit_duration_seconds": 11602,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "134/82",
     "heartrate_bpm": 119,
     "pain_level": 4
@@ -1122,7 +1122,7 @@ const visits = [{
     "administering_nurse": "Eddy Spedroni",
     "medication": "AllergiClear",
     "visit_duration_seconds": 7991,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "140/80",
     "heartrate_bpm": 104,
     "pain_level": 3
@@ -1136,7 +1136,7 @@ const visits = [{
     "administering_nurse": "Jordana Bostock",
     "medication": "ImmunoBoost",
     "visit_duration_seconds": 1449,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "134/86",
     "heartrate_bpm": 96,
     "pain_level": 2
@@ -1150,7 +1150,7 @@ const visits = [{
     "administering_nurse": "Maryann Fryett",
     "medication": "CoughCalmix",
     "visit_duration_seconds": 13684,
-    "medication_tolerance": "neutral",
+    "medication_tolerance": 3,
     "blood_pressure": "126/75",
     "heartrate_bpm": 110,
     "pain_level": 9
@@ -1164,7 +1164,7 @@ const visits = [{
     "administering_nurse": "Kahlil Sainteau",
     "medication": "ProbiotaMax",
     "visit_duration_seconds": 2979,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "136/78",
     "heartrate_bpm": 129,
     "pain_level": 7
@@ -1178,7 +1178,7 @@ const visits = [{
     "administering_nurse": "Birk MacCartney",
     "medication": "Medifloxin",
     "visit_duration_seconds": 10811,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "138/85",
     "heartrate_bpm": 98,
     "pain_level": 1
@@ -1192,7 +1192,7 @@ const visits = [{
     "administering_nurse": "Reidar Plowes",
     "medication": "HeartGuardia",
     "visit_duration_seconds": 7177,
-    "medication_tolerance": "neutral",
+    "medication_tolerance": 3,
     "blood_pressure": "136/78",
     "heartrate_bpm": 103,
     "pain_level": 8
@@ -1206,7 +1206,7 @@ const visits = [{
     "administering_nurse": "Ebenezer Thistleton",
     "medication": "CholesterBlock",
     "visit_duration_seconds": 1841,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "120/86",
     "heartrate_bpm": 128,
     "pain_level": 7
@@ -1220,7 +1220,7 @@ const visits = [{
     "administering_nurse": "Oliviero Ubach",
     "medication": "CholesterBlock",
     "visit_duration_seconds": 7339,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "144/90",
     "heartrate_bpm": 108,
     "pain_level": 1
@@ -1234,7 +1234,7 @@ const visits = [{
     "administering_nurse": "Pearce Cunde",
     "medication": "CholesterBlock",
     "visit_duration_seconds": 12915,
-    "medication_tolerance": "neutral",
+    "medication_tolerance": 3,
     "blood_pressure": "119/78",
     "heartrate_bpm": 137,
     "pain_level": 10
@@ -1248,7 +1248,7 @@ const visits = [{
     "administering_nurse": "Tybie Bartalot",
     "medication": "HeadacheEaser",
     "visit_duration_seconds": 9625,
-    "medication_tolerance": "great",
+    "medication_tolerance": 5,
     "blood_pressure": "136/86",
     "heartrate_bpm": 103,
     "pain_level": 4
@@ -1262,7 +1262,7 @@ const visits = [{
     "administering_nurse": "Emeline Hurran",
     "medication": "CoughCalmix",
     "visit_duration_seconds": 7066,
-    "medication_tolerance": "great",
+    "medication_tolerance": 5,
     "blood_pressure": "112/70",
     "heartrate_bpm": 88,
     "pain_level": 7
@@ -1276,7 +1276,7 @@ const visits = [{
     "administering_nurse": "Roseanne Rickcord",
     "medication": "DigestiPro",
     "visit_duration_seconds": 3981,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "134/86",
     "heartrate_bpm": 127,
     "pain_level": 5
@@ -1290,7 +1290,7 @@ const visits = [{
     "administering_nurse": "Chet Sperling",
     "medication": "BloodPressureX",
     "visit_duration_seconds": 11024,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "112/72",
     "heartrate_bpm": 98,
     "pain_level": 7
@@ -1304,7 +1304,7 @@ const visits = [{
     "administering_nurse": "Audre Isaksen",
     "medication": "VisionClarity",
     "visit_duration_seconds": 12408,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "130/82",
     "heartrate_bpm": 134,
     "pain_level": 9
@@ -1318,7 +1318,7 @@ const visits = [{
     "administering_nurse": "Kore Cracoe",
     "medication": "Medifloxin",
     "visit_duration_seconds": 13398,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "128/88",
     "heartrate_bpm": 74,
     "pain_level": 8
@@ -1332,7 +1332,7 @@ const visits = [{
     "administering_nurse": "Evey Twiname",
     "medication": "ArthriFlex",
     "visit_duration_seconds": 7272,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "118/72",
     "heartrate_bpm": 125,
     "pain_level": 7
@@ -1346,7 +1346,7 @@ const visits = [{
     "administering_nurse": "Aggy Sloane",
     "medication": "DigestiPro",
     "visit_duration_seconds": 2907,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "124/78",
     "heartrate_bpm": 87,
     "pain_level": 6
@@ -1360,7 +1360,7 @@ const visits = [{
     "administering_nurse": "Ricardo Courtonne",
     "medication": "SkinSaverol",
     "visit_duration_seconds": 8277,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "132/88",
     "heartrate_bpm": 98,
     "pain_level": 2
@@ -1374,7 +1374,7 @@ const visits = [{
     "administering_nurse": "Erhart Stronack",
     "medication": "BloodPressureX",
     "visit_duration_seconds": 13130,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "124/88",
     "heartrate_bpm": 89,
     "pain_level": 6
@@ -1388,7 +1388,7 @@ const visits = [{
     "administering_nurse": "Gradeigh Trahearn",
     "medication": "PainReliefol",
     "visit_duration_seconds": 4709,
-    "medication_tolerance": "bad",
+    "medication_tolerance": 2,
     "blood_pressure": "112/70",
     "heartrate_bpm": 123,
     "pain_level": 4
@@ -1402,7 +1402,7 @@ const visits = [{
     "administering_nurse": "Alyosha Abramson",
     "medication": "PainReliefol",
     "visit_duration_seconds": 14367,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "130/76",
     "heartrate_bpm": 73,
     "pain_level": 5
@@ -1416,7 +1416,7 @@ const visits = [{
     "administering_nurse": "Ricca McCandie",
     "medication": "BloodPressureX",
     "visit_duration_seconds": 9349,
-    "medication_tolerance": "great",
+    "medication_tolerance": 5,
     "blood_pressure": "130/82",
     "heartrate_bpm": 114,
     "pain_level": 5
@@ -1430,7 +1430,7 @@ const visits = [{
     "administering_nurse": "Danya Start",
     "medication": "CholesterBlock",
     "visit_duration_seconds": 4767,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "118/84",
     "heartrate_bpm": 72,
     "pain_level": 7
@@ -1444,7 +1444,7 @@ const visits = [{
     "administering_nurse": "Ernaline Fahy",
     "medication": "Medifloxin",
     "visit_duration_seconds": 8915,
-    "medication_tolerance": "bad",
+    "medication_tolerance": 2,
     "blood_pressure": "128/88",
     "heartrate_bpm": 93,
     "pain_level": 6
@@ -1458,7 +1458,7 @@ const visits = [{
     "administering_nurse": "Kathie Storrar",
     "medication": "CholesterBlock",
     "visit_duration_seconds": 7032,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "138/85",
     "heartrate_bpm": 134,
     "pain_level": 1
@@ -1472,7 +1472,7 @@ const visits = [{
     "administering_nurse": "Hewe Dollman",
     "medication": "PainReliefol",
     "visit_duration_seconds": 6315,
-    "medication_tolerance": "good",
+    "medication_tolerance": 4,
     "blood_pressure": "138/92",
     "heartrate_bpm": 133,
     "pain_level": 4
@@ -1486,7 +1486,7 @@ const visits = [{
     "administering_nurse": "Hendrika Gareisr",
     "medication": "AllergiClear",
     "visit_duration_seconds": 12067,
-    "medication_tolerance": "bad",
+    "medication_tolerance": 2,
     "blood_pressure": "125/85",
     "heartrate_bpm": 80,
     "pain_level": 9
@@ -1500,7 +1500,7 @@ const visits = [{
     "administering_nurse": "Natividad Skurm",
     "medication": "MoodStabilix",
     "visit_duration_seconds": 11512,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "125/78",
     "heartrate_bpm": 94,
     "pain_level": 4
@@ -1514,7 +1514,7 @@ const visits = [{
     "administering_nurse": "Egbert Down",
     "medication": "CholesterBlock",
     "visit_duration_seconds": 7698,
-    "medication_tolerance": "terrible",
+    "medication_tolerance": 1,
     "blood_pressure": "126/90",
     "heartrate_bpm": 79,
     "pain_level": 10
@@ -1528,13 +1528,13 @@ const visits = [{
     "administering_nurse": "Camila Brierley",
     "medication": "Medifloxin",
     "visit_duration_seconds": 12471,
-    "medication_tolerance": "bad",
+    "medication_tolerance": 2,
     "blood_pressure": "126/75",
     "heartrate_bpm": 126,
     "pain_level": 8
 }];
 
-module.exports = {
+export {
     patients,
     visits
 };

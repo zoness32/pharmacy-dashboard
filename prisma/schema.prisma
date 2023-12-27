@@ -40,7 +40,7 @@ model Visit {
   // It's much easier to generate mock data for this value, though, so I'm doing it this way
   // in the demo.
   visit_duration_seconds  Int
-  medication_tolerance    String
+  medication_tolerance    Int
   patient                 Patient? @relation(fields: [patient_id], references: [id])
   patient_id              String?  @db.Uuid
   blood_pressure          String

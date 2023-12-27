@@ -8,6 +8,21 @@ const config: Config = {
     'node_modules/flowbite-react/lib/esm/**/*.js',
   ],
   theme: {
+    colors: {
+      'floatblue': {
+        50: '#EDFAFF',
+        100: '#D6F2FF',
+        200: '#B5EBFF',
+        300: '#83E1FF',
+        400: '#48CDFF',
+        500: '#1EAFFF',
+        600: '#0691FF',
+        700: '#007DFE',
+        800: '#085FC5',
+        900: '#0D539B',
+        950: '#0E325D'
+      }
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
