@@ -1534,7 +1534,7 @@ const visits = [{
     "pain_level": 8
 }];
 
-export {
+module.exports = {
     patients,
     visits
 };

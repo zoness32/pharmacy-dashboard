@@ -1,5 +1,7 @@
 const { patients, visits } = require('../app/lib/mockData');
-const { prismaClient } = require('../app/lib/db');
+const { PrismaClient } = require('@prisma/client');
+
+const prismaClient = new PrismaClient();
 
 async function main() {
     let start = 0;
