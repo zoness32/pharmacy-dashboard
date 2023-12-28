@@ -15,7 +15,7 @@ export default async function PatientsTable() {
       <Table striped hoverable>
         <TableHead>
           <TableHeadCell>Patient Name</TableHeadCell>
-          <TableHeadCell>Patient Email</TableHeadCell>
+          <TableHeadCell className="hidden md:table-cell">Patient Email</TableHeadCell>
           <TableHeadCell>
             <span className="sr-only">Edit</span>
           </TableHeadCell>
@@ -26,7 +26,7 @@ export default async function PatientsTable() {
               return (
                 <TableRow key={ patient.id }>
                   <TableCell>{ patient.full_name }</TableCell>
-                  <TableCell>{ patient.email }</TableCell>
+                  <TableCell className="hidden md:table-cell">{ patient.email }</TableCell>
                   <TableCell className="flex flex-1 justify-end">
                     <ViewPatient id={ patient.id }/>
                   </TableCell>
