@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import SideNav from "@/app/ui/patients/sidenav";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,11 +16,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-    <body className={`${inter.className} bg-floatblue-100 bg-gradient-to-b from-floatblue-100 to-floatblue-200`}>
+    <body className={ `${ inter.className } bg-blue-300` }>
     <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
-      <div className="w-full flex-none md:w-64">
-        <SideNav/>
-      </div>
       <div className="flex-grow md:overflow-y-auto">{ children }</div>
     </div>
     </body>

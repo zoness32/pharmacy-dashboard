@@ -8,11 +8,8 @@ interface PatientDetailsProps {
 }
 
 export default function PatientDetails({ patient }: PatientDetailsProps) {
-  console.log(patient);
-
   return (
     <Card className="flex flex-col">
-      <h3 className="text-2xl font-bold ">{ patient.full_name }</h3>
       <span><strong>Email: </strong>{ patient.email }</span>
       <span><strong>Birth Date: </strong>{ dayjs(patient.birthdate).format('MM/DD/YYYY') }</span>
       <span><strong>Blood Type: </strong>{ patient.blood_type }</span>
