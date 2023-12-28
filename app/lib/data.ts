@@ -1,8 +1,11 @@
 import prisma from './db';
 
-export async function fetchPatientAndVisits() {
+export async function fetchPatientAndVisitsById(id: string) {
     try {
-        return await prisma.patient.findFirst({
+        return await prisma.patient.findUnique({
+            where: {
+                id: id
+            },
             include: {
                 visits: {
                     orderBy: {
@@ -13,6 +16,15 @@ export async function fetchPatientAndVisits() {
         });
     } catch (error) {
         console.error('Database Error:', error);
-        throw new Error('Failed to fetch the patient');
+        throw new Error(`Failed to fetch the patient by id: ${id}`);
+    }
+}
+
+export async function fetchPatients() {
+    try {
+        return await prisma.patient.findMany({});
+    } catch (error) {
+        console.error('Database Error:', error);
+        throw new Error('Failed to fetch patients');
     }
 }
