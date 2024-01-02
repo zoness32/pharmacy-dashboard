@@ -8,10 +8,10 @@ import {
 import { VisitExtended } from "@/app/lib/types";
 
 interface VisitTableProps {
-  visits: VisitExtended[];
+  visits?: VisitExtended[];
 }
 
-export default async function VisitTable({ visits }: VisitTableProps) {
+export default async function VisitTable({ visits = [] }: VisitTableProps) {
   dayjs.extend(duration);
 
   return (

@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "test": "vitest",
     "seed": "node -r dotenv/config ./scripts/seed.js",
     "prisma-seed": "node scripts/seed_prisma.ts",
     "postinstall": "prisma generate"
@@ -29,18 +30,23 @@
     "use-debounce": "^10.0.0"
   },
   "devDependencies": {
+    "@testing-library/react": "^14.1.2",
     "@types/lodash": "^4.14.202",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.0.1",
     "cross-env": "^7.0.3",
     "dotenv": "^16.3.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
+    "jsdom": "^23.0.1",
+    "next-router-mock": "^0.9.11",
     "postcss": "^8",
     "prisma": "^5.7.1",
     "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^1.1.1"
   }
 }
