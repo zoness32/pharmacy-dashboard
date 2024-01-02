@@ -44,8 +44,8 @@ export default async function Page({
       </section>
       <section className="w-full flex-grow rounded-lg mt-12">
         <h2 className="text-2xl font-bold mb-4">Visits</h2>
-        <div className="flex flex-row justify-between mb-4">
-          <div className="max-w-xl w-[100%]">
+        <div className="flex flex-col justify-between mb-4 lg:flex-row">
+          <div className="max-w-lg mb-4 w-[100%] lg:mb-0">
             <Search placeholder={ "Search" }/>
           </div>
           <SortBy/>
