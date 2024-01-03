@@ -3,6 +3,8 @@
 import { PrismaClient } from '@prisma/client'
 
 const prismaClientSingleton = () => {
+    // rather than calculating and creating these properties/values on the frontend, use Prisma
+    // to generate them on-the-fly
     return new PrismaClient().$extends({
         result: {
             patient: {

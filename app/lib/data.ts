@@ -27,6 +27,11 @@ export async function fetchFilteredVisitsForPatient(
   patient_id: string
 ) {
     try {
+        // This will take a query and search all specified columns for that value.
+        // Unfortunately it's limited to only text-based columns, so not every field
+        // can be searched this way - or more precisely, I was unable to find a workaround
+        // using Prisma in the time I allotted to this piece.
+        // see https://www.prisma.io/docs/orm/prisma-client/queries/full-text-search
         return await prisma.visit.findMany({
             where: {
                 AND: [
