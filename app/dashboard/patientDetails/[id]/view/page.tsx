@@ -1,13 +1,13 @@
 import PatientDetails from "@/app/ui/patient-view/patient-details";
 import VisitTable from "@/app/ui/patient-view/visit-table";
-import {fetchFilteredVisitsForPatient, fetchPatientAndVisitsById, fetchPatientById} from "@/app/lib/data";
-import {notFound} from "next/navigation";
+import { fetchPatientAndVisitsById, fetchPatientById } from "@/app/lib/data";
+import { notFound } from "next/navigation";
 import Search from "@/app/ui/patient-view/search";
 import SortBy from "@/app/ui/patient-view/sort-by";
 import _ from "lodash";
-import {VisitExtended} from "@/app/lib/types";
+import { VisitExtended } from "@/app/lib/types";
 
-const keysToFilterOut: Array<keyof VisitExtended> = ["visit_time", "administering_nurse", "blood_pressure", "heartrate_bpm", "administration_location_displayable", "medication", "medication_tolerance_displayable", "pain_level"];
+const keysToExtract: Array<keyof VisitExtended> = ["visit_time", "administering_nurse", "blood_pressure", "heartrate_bpm", "administration_location_displayable", "medication", "medication_tolerance_displayable", "pain_level"];
 
 export default async function Page({
   params,
@@ -25,11 +25,11 @@ export default async function Page({
   const sortBy = searchParams?.sortBy || 'visit_time';
   const [patient] = await Promise.all([
     fetchPatientAndVisitsById(params.id),
+    // this can be used to shift the filtering to the database layer instead of the frontend; however, the current
+    // implementation using Prisma is limited to searching only text columns. With more time I'd craft a raw sql query
+    // to filter on all visible table columns, but the frontend solution below doesn't have that limitation.
     // fetchFilteredVisitsForPatient(query, params.id)
-
   ]);
-
-  console.log("query1   ", query);
 
   if (!patient) {
     notFound();
@@ -37,31 +37,14 @@ export default async function Page({
 
   let visits = patient.visits;
 
-  function extractFromObj<T, K extends keyof T>(obj: T, keys: K[]): Pick<T, K> {
-    return keys.reduce((newObj, curr) => {
-      newObj[curr] = obj[curr]
+  const searchResults = query ?
+    visits.filter(visit => {
+      const stringifiedVisit = _.mapValues(_.pick(visit, keysToExtract), val => val?.toString().toLowerCase());
+      return _.some(_.values(stringifiedVisit), val => val?.includes(query));
+    }) :
+    visits;
 
-      return newObj
-    }, {} as Pick<T, K>)
-  }
-
-  if (query) {
-    const filterableVisits = visits.map(visit => {
-      return extractFromObj(visit, keysToFilterOut);
-    }).map(visit => {
-      return Object.values(visit).map(val => {
-        if (val) {
-          return val.toString().toLowerCase();
-        }
-      });
-    }).filter(valArray => {
-      return valArray.some(val => val && val.includes(query))
-    });
-
-    // console.log(values);
-  }
-
-  visits = _.orderBy(visits, [sortBy], [order]);
+  visits = _.orderBy(searchResults, [sortBy], [order]);
 
   return (
     <>
