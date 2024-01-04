@@ -37,9 +37,15 @@ export default async function Page({
 
   let visits = patient.visits;
 
+  // only search if a query is present
   const searchResults = query ?
     visits.filter(visit => {
+      // because we only want to search within a subset of VisitExtended properties, we first need to derive an
+      // object with only the properties we want to search on it. Then we need to convert those values to strings
+      // and lowercase them to permit case-insensitive searching.
       const stringifiedVisit = _.mapValues(_.pick(visit, keysToExtract), val => val?.toString().toLowerCase());
+      // finally, check each stringified value to see if it includes the query string, and return the current Visit
+      // object if so
       return _.some(_.values(stringifiedVisit), val => val?.includes(query));
     }) :
     visits;
