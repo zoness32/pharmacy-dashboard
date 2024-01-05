@@ -17,7 +17,7 @@ export default async function PatientsTable() {
           <TableHeadCell>Patient Name</TableHeadCell>
           <TableHeadCell className="hidden md:table-cell">Patient Email</TableHeadCell>
           <TableHeadCell>
-            <span className="sr-only">Edit</span>
+            <span className="sr-only">View Details</span>
           </TableHeadCell>
         </TableHead>
         <TableBody className='divide-y'>
