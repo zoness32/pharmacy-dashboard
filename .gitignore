@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+/local-cypress-files/1-getting-started
+/local-cypress-files/2-advanced-examples
+/cypress/fixtures
+/cypress/screenshots
+/cypress/support
+/local-cypress-files
